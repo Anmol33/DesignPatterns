@@ -53,3 +53,32 @@ Here is a breakdown of the UML diagram for the Visitor Pattern:
                                | + specificMethodB()   |
                                +----------------------+
 ```
+
+
+## Visitor Pattern Practice Questions
+
+Here are some practice questions to help you better understand and implement the Visitor Pattern:
+
+### 1. Basic Visitor Implementation:
+Implement the Visitor Pattern for a small zoo where there are different animals like **Lion**, **Monkey**, and **Dolphin**. Each animal can perform different actions when visited by a **SpeakVisitor** or **JumpVisitor**. Each visitor performs a specific behavior for each animal.
+
+**Hint**:
+- **SpeakVisitor** makes the animals “speak.”
+- **JumpVisitor** makes the animals “jump.”
+
+### 2. File System Example:
+You are tasked with creating a file system that contains two types of files: **TextFile** and **AudioFile**. Implement the Visitor Pattern where different visitors can:
+- Count the number of words in a **TextFile**.
+- Calculate the total playtime in an **AudioFile**.
+
+Create two visitors: **WordCounterVisitor** and **PlayTimeVisitor** to handle these operations.
+
+### 3. Shopping Cart Example:
+In an e-commerce platform, you need to implement a shopping cart system where there are different types of items, such as **Book** and **Electronics**. Implement the Visitor Pattern so that:
+- **PriceVisitor** can calculate the total price of items in the cart.
+- **WeightVisitor** can calculate the total shipping weight of items in the cart.
+
+### 4. Tax Calculation for Different Countries:
+You are tasked with building a tax calculation system for two countries: **USA** and **UK**. Implement the Visitor Pattern where:
+- Different types of products like **Food**, **Electronics**, and **Clothes** are subject to different tax rates in each country.
+- Implement visitors like **USATaxVisitor** and **UKTaxVisitor** that calculate the correct tax for each product based on the country.
